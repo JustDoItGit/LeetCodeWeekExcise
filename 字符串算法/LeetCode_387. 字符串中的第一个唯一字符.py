@@ -39,5 +39,5 @@ class Solution(object):
 class Solution2:
     def firstUniqChar(self, s):
         letters = 'abcdefghijklmnopqrstuvwxyz'
-        index = [s.index(l) for l in letters if s.count(l) == 1]
-        return min(index) if len(index) > 0 else -1
+        indexs = [s.index(l) for l in letters if s.count(l) == 1]
+        return min(indexs) if indexs else -1
